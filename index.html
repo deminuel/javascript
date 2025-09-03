@@ -16,17 +16,22 @@
         let sorted = student_scores.filter(n => n > 60);
         console.log(sorted);
 
+        let score =[45, 67, 89, 34, 90, 76, 54];  //Que 3
+        const reduce = score.reduce((add, num) => add + num, 0);
+         console.log(reduce); 
+
         
         let fruits = ["apple", "banana", "mango", "orange", "pear"]; //Que 4 slice
         const arr = fruits.slice(0, 3);
         console.log(arr);
 
-
-        // let fruit = ["apple", "banana", "mango", "orange", "pear"]; //que 5 Splice
-        // const array = arr.splice([2]);
-        // array.splice(2), (grape);
-        // console.log(array);
-
+        
+       let fruit = ["apple", "banana", "mango", "orange", "pear"]; //Que 5 splice
+         fruit.splice(2, 1, "grape");
+         console.log(fruit);
+         
+        
+         
 
    
         let studentScores = [45, 87, 89, 34, 90, 76, 54];  // Que 6 Find
@@ -34,7 +39,7 @@
          console.log(scores);
 
           const items = ["apple", "banana", "mango", "orange", "pear"];  //Que 7 Foreach
-           fruits.forEach(items => {
+           items.forEach(items => {
             console.log(items.toUpperCase());
           }); 
 
